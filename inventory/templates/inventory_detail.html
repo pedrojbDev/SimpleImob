@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+  <div class="container mt-4">
+    <h3 class="display-6">Detalhes</h3>
+    <div class="d-flex justify-content-center"></div>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Nome: <strong>{{object.title}}</strong></h3>
+          <h5 class="card-text">Tipo: <strong>{{object.type}}</strong></h5>
+          <h5 class="card-text"> Quartos: <strong>{{object.rooms}}</strong></h5>
+          <h5 class="card-text">Suites: <strong>{{object.suites}}</strong></h5>
+          <h5 class="card-text">Garagem: <strong>{{object.garage}}</strong></h5>
+          <h5 class="card-text">Bairro: <strong>{{object.neighborhood}}</strong></h5>
+          <h5 class="card-text">Rua: <strong>{{object.street}}</strong></h5>
+          <h5 class="card-text">Valor: <strong>{{object.value}}</strong></h5>
+          <h5 class="card-text">Modalidade: <strong>{{object.modality}}</strong></h5>
+          <h5 class="card-text">Nome do Dono: <strong>{{object.owner_name}}</strong></h5>
+          <h5 class="card-text">Telefone do Dono: <strong>{{object.owner_tel}}</strong></h5>
+          <h5 class="card-text">Comissao: <strong>{{object.comission}}</strong></h5>
+          <h5 class="card-text">Descricao: <strong>{{object.description}}</strong></h5>
+          
+          
+        </div>
+      </div>
+  </div>
+    <a href="{% url 'inventory_list' %}" class="btn btn-secondary mt-3">Cancelar</a>
+  </div>
+
+{% endblock %}

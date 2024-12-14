@@ -1,0 +1,16 @@
+<!-- notifications/templates/notification_form.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solicitar Notificação</title>
+</head>
+<body>
+    <h1>Solicitar Notificação</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Receber Notificação</button>
+    </form>
+</body>
+</html>

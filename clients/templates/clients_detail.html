@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+  <div class="container mt-4">
+    <h3 class="display-6">Detalhes</h3>
+    <div class="d-flex justify-content-center"></div>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Nome: <strong>{{object.name}}</strong></h3>
+          <h5 class="card-text">Tipo: <strong>{{object.requirement_type}}</strong></h5>
+          <h5 class="card-text"> Quartos: <strong>{{object.requirement_rooms}}</strong></h5>
+          <h5 class="card-text">Suites: <strong>{{object.requirement_suites}}</strong></h5>
+          <h5 class="card-text">Garagem: <strong>{{object.requirement_garage}}</strong></h5>
+          <h5 class="card-text">Bairro: <strong>{{object.requirement_neighborhood}}</strong></h5>
+          <h5 class="card-text">Rua: <strong>{{object.tel}}</strong></h5>
+          <h5 class="card-text">Valor: <strong>{{object.formatted_value}}</strong></h5>
+          <h5 class="card-text">Modalidade: <strong>{{object.requirement_modality}}</strong></h5>
+          <h5 class="card-text">Email do Dono: <strong>{{object.email}}</strong></h5>
+          <h5 class="card-text">Telefone do Dono: <strong>{{object.lead}}</strong></h5>
+          
+          
+          
+        </div>
+      </div>
+  </div>
+    <a href="{% url 'clients_list' %}" class="btn btn-secondary mt-3">Cancelar</a>
+  </div>
+
+{% endblock %}
